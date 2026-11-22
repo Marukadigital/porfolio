@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mariana Ferreyra · MaruKa Digital</title>
+  <meta name="description" content="Portfolio de Mariana Teresita Ferreyra, Lic. en Ciencias de la Comunicación: ecommerce, marketing digital e inteligencia artificial aplicada a los procesos comerciales. Recorrido, trabajos y videos.">
+  <meta name="theme-color" content="#1fa67a">
+  <link rel="canonical" href="https://maruka.com.ar/portfolio.html">
+  <link rel="icon" href="images/logo-maruka.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <noscript><style>.aparecer { opacity: 1; transform: none; }</style></noscript>
+</head>
+<body>
+
+  <!-- Íconos de línea (mismo lenguaje visual que el logo de MaruKa) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20.5 8H6"/></symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/><text x="12" y="15" text-anchor="middle" font-size="6.5" font-weight="700" font-family="Roboto, Arial, sans-serif" fill="currentColor" stroke="none">IA</text></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></symbol>
+      <symbol id="i-bars" viewBox="0 0 24 24"><path d="M5 20V11M11 20V4M17 20v-6M2 20h20"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+      <symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.7 7.1L3 21l1.9-6.2A8 8 0 1 1 21 12z"/></symbol>
+      <symbol id="i-nfc" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.2"/><path d="M10 8a5.5 5.5 0 0 1 0 8M13.5 5.5a9.5 9.5 0 0 1 0 13M17 3.2a13 13 0 0 1 0 17.6"/></symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+      <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+      <symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="progreso" id="progreso" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header">
+    <div class="contenedor nav">
+      <a href="index.html" class="logo-texto" aria-label="MaruKa Digital - Volver al sitio">
+        <span class="m">MARU</span><span class="k">KA</span>
+        <small>DIGITAL</small>
+      </a>
+
+      <button class="hamburguesa" id="btn-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Sitio MaruKa</a></li>
+        <li><a href="#hago">Qué hago</a></li>
+        <li><a href="#recorrido">Recorrido</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto" class="btn btn-naranja">Contactame</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="p-hero" id="inicio">
+      <div class="fondo-iconos" aria-hidden="true">
+        <svg class="i ico" style="--x:1%;--y:52%;--s:34px;--d:0s"><use href="#i-nfc"/></svg>
+        <svg class="i ico" style="--x:44%;--y:5%;--s:40px;--d:1.2s"><use href="#i-bars"/></svg>
+        <svg class="i ico" style="--x:90%;--y:8%;--s:58px;--d:.6s"><use href="#i-search"/></svg>
+        <svg class="i ico" style="--x:50%;--y:86%;--s:44px;--d:2s"><use href="#i-chip"/></svg>
+        <svg class="i ico" style="--x:4%;--y:84%;--s:54px;--d:1.6s"><use href="#i-cart"/></svg>
+        <svg class="i ico" style="--x:94%;--y:64%;--s:46px;--d:.3s"><use href="#i-target"/></svg>
+        <svg class="i ico" style="--x:27%;--y:92%;--s:38px;--d:2.6s"><use href="#i-chat"/></svg>
+      </div>
+
+      <div class="contenedor p-hero-grid">
+        <div>
+          <span class="etiqueta">Portfolio profesional · 2026</span>
+          <h1 class="nombre"><span class="n1">MARIANA</span><span class="n2">FERREYRA</span></h1>
+          <p class="espaciado v">Marketing Digital</p>
+          <p class="espaciado a">Ecommerce · IA aplicada</p>
+
+          <p class="rotador" aria-hidden="true">Hago crecer negocios con <span class="palabra c-n" id="palabra">ecommerce</span></p>
+          <p class="bajada">Lic. en Ciencias de la Comunicación. Diseño estrategias de marketing, gestiono tiendas virtuales y canales de venta digital, y aplico inteligencia artificial a los procesos comerciales: del plan a la atención al cliente y el análisis de resultados.</p>
+
+          <div class="hero-botones">
+            <a href="#trabajos" class="btn btn-naranja">Ver trabajos</a>
+            <a href="#videos" class="btn btn-borde">Ver videos</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta NFC: guiño al servicio NFC de MaruKa -->
+        <div class="escena-nfc">
+          <div class="tarjeta-nfc atras" aria-hidden="true"></div>
+          <a class="tarjeta-nfc frente" href="https://wa.me/5493517370345?text=Hola%20Mariana%2C%20vi%20tu%20portfolio" target="_blank" rel="noopener" aria-label="Tarjeta de contacto de Mariana Ferreyra: escribir por WhatsApp">
+            <span class="tn-top">
+              <span class="logo-mini"><span class="m">MARU</span><span class="k">KA</span><small>DIGITAL</small></span>
+              <span class="nfc-wrap"><svg class="i"><use href="#i-nfc"/></svg></span>
+            </span>
+            <span>
+              <span class="tn-nombre">Mariana Teresita Ferreyra</span>
+              <span class="tn-rol">Lic. en Ciencias de la Comunicación</span>
+              <span class="tn-tags"><i>Ecommerce</i><i>IA aplicada</i><i>Marca</i></span>
+            </span>
+            <span class="tn-pie">Tocá la tarjeta · escribime</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NÚMEROS ===================== -->
+    <section class="numeros">
+      <div class="contenedor stats aparecer">
+        <div class="stat"><strong data-cuenta="10" data-mas>10</strong><span>años en marketing digital y ecommerce</span></div>
+        <div class="stat"><strong data-cuenta="20" data-mas>20</strong><span>sitios web desarrollados a medida</span></div>
+        <div class="stat"><strong data-cuenta="17">17</strong><span>piezas gráficas en este portfolio</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== CINTA DE EMPRESAS ===================== -->
+    <section class="cinta" aria-label="Empresas y clientes con los que trabajé">
+      <p class="rotulo">Empresas y clientes con los que trabajé</p>
+      <div class="cinta-ventana">
+        <div class="cinta-pista" id="cinta-pista">
+          <span>Gomería Central</span>
+          <span>Ingemar</span>
+          <span>Avtor</span>
+          <span>Sirolo</span>
+          <span>Innotec</span>
+          <span>Hydrom</span>
+          <span>Ferretería General Bustos</span>
+          <span>Telecom SA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUÉ HAGO ===================== -->
+    <section class="seccion" id="hago">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <span class="etiqueta num"><b>01</b> Qué hago</span>
+          <h2>Los frentes de MaruKa Digital, con <span class="resalte-n">casos reales</span> detrás</h2>
+          <p>Estrategia, tecnología y foco en el cliente. Cada servicio está respaldado por experiencia concreta.</p>
+        </div>
+
+        <div class="grilla-servicios">
+          <article class="tarjeta aparecer">
+            <div class="icono" aria-hidden="true"><svg class="i"><use href="#i-cart"/></svg></div>
+            <h3>Ecommerce y ventas online</h3>
+            <p>Tiendas virtuales y canales de venta digital: catálogo, precios, logística nacional y atención al cliente.</p>
+            <p class="donde">dunlopgcentral.com · Mercado Libre · Facebook Marketplace · WhatsApp</p>
+          </article>
+
+          <article class="tarjeta aparecer">
+            <div class="icono" aria-hidden="true"><svg class="i"><use href="#i-chip"/></svg></div>
+            <h3>IA aplicada a procesos comerciales</h3>
+            <p>Integro inteligencia artificial en la ejecución operativa: del plan de marketing a la atención al cliente y el análisis de resultados.</p>
+            <p class="donde">Integradora de IA aplicada a los procesos comerciales</p>
+          </article>
+
+          <article class="tarjeta aparecer">
+            <div class="icono" aria-hidden="true"><svg class="i"><use href="#i-target"/></svg></div>
+            <h3>Marca y comunicación</h3>
+            <p>Identidad y comunicación coherentes: flyers, piezas gráficas, videos comerciales, merchandising y stands en ferias.</p>
+            <p class="donde">Ingemar · Sirolo · Innotec · Hydrom · Avtor</p>
+          </article>
+
+          <article class="tarjeta aparecer">
+            <div class="icono" aria-hidden="true"><svg class="i"><use href="#i-bars"/></svg></div>
+            <h3>Datos, CRM y WhatsApp</h3>
+            <p>Segmentación de bases de datos, CRM, campañas masivas de WhatsApp y email marketing para convertir y fidelizar.</p>
+            <p class="donde">Power BI · Bejerman · Xubio · Access</p>
+          </article>
+
+          <article class="tarjeta aparecer">
+            <div class="icono" aria-hidden="true"><svg class="i"><use href="#i-search"/></svg></div>
+            <h3>Estrategia y publicidad</h3>
+            <p>Planes estratégicos de marketing, campañas en Google Ads y Meta Ads con seguimiento en Google Analytics, y estudios de mercado.</p>
+            <p class="donde">Ingemar · Avtor · PyMEs y organizaciones sociales</p>
+          </article>
+
+          <article class="tarjeta aparecer">
+            <div class="icono" aria-hidden="true"><svg class="i"><use href="#i-web"/></svg></div>
+            <h3>Sitios web a medida</h3>
+            <p>Más de 20 sitios desarrollados para mejorar la presencia digital y la experiencia de usuario.</p>
+            <p class="donde">Climateck · Vultur Ecoturismo · Estudio García Porta</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RECORRIDO ===================== -->
+    <section class="seccion alt" id="recorrido">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <span class="etiqueta num"><b>02</b> Recorrido</span>
+          <h2>De la atención al cliente al <span class="resalte-v">ecommerce</span> y la <span class="resalte-a">IA</span></h2>
+          <p>Deslizá para recorrer mi experiencia, de la más reciente a la más antigua.</p>
+        </div>
+      </div>
+
+      <div class="riel" id="riel" tabindex="0" role="region" aria-label="Experiencia profesional, deslizable">
+          <article class="hito-r">
+            <span class="anio">2025</span>
+            <span class="fecha">Feb. 2025 – Actualidad</span>
+            <h3>Gomería Central</h3>
+            <p class="cargo">Gestión Ecommerce</p>
+            <ul>
+              <li>Administré la tienda virtual dunlopgcentral.com: catálogo optimizado y atención digital, con aumento sostenido de las ventas online mensuales.</li>
+              <li>Campañas masivas de WhatsApp segmentadas por perfil de cliente: más respuestas y menores tiempos de atención.</li>
+              <li>Comunicación en redes y pauta orgánica, cuentas corporativas y prospección B2B.</li>
+            </ul>
+          </article>
+
+          <article class="hito-r">
+            <span class="anio">2023</span>
+            <span class="fecha">Ago. 2023 – Jun. 2024</span>
+            <h3>Ingemar</h3>
+            <p class="cargo">Responsable de Marketing</p>
+            <ul>
+              <li>Campañas en Google Ads y Meta Ads con seguimiento en Google Analytics: más tráfico web y más conversiones.</li>
+              <li>CRM, WhatsApp masivo y email marketing segmentado para mejorar la fidelización.</li>
+              <li>Coordinación de stands y material gráfico en ferias y exposiciones, con nuevos contactos comerciales.</li>
+              <li>Limpieza y estructuración de bases de datos para marketing directo; piezas gráficas, videos comerciales y merchandising.</li>
+            </ul>
+          </article>
+
+          <article class="hito-r">
+            <span class="anio">2022</span>
+            <span class="fecha">Mar. 2022 – Ago. 2023</span>
+            <h3>Avtor SRL</h3>
+            <p class="cargo">Responsable Marketing Digital Ecommerce · Bulonera y Ferretería Industrial</p>
+            <ul>
+              <li>Más ventas en Mercado Libre, Facebook Marketplace y WhatsApp, con gestión estratégica de precios y comunicación de marca.</li>
+              <li>Logística nacional con Correo Argentino, Andreani y comisionistas; encuestas de posventa y acciones de fidelización.</li>
+              <li>Informes comerciales en Power BI, administración del CRM y campañas de WhatsApp, y estudio de mercado para una nueva sucursal.</li>
+            </ul>
+          </article>
+
+          <article class="hito-r">
+            <span class="anio">2020</span>
+            <span class="fecha">Ago. 2020 – Dic. 2021</span>
+            <h3>Sirolo SA · Innotec SA · Hydrom SRL</h3>
+            <p class="cargo">Marketing Digital Ecommerce</p>
+            <ul>
+              <li>Identidad de marca y presencia digital: flyers, videos comerciales y actualización constante de la web.</li>
+              <li>Atención personalizada y gestión de base de datos en Bejerman para retener a las grandes cuentas.</li>
+              <li>Logística nacional con Correo Argentino y Andreani.</li>
+            </ul>
+          </article>
+
+          <article class="hito-r">
+            <span class="anio">2018</span>
+            <span class="fecha">2018 – Ago. 2020</span>
+            <h3>Ferretería General Bustos</h3>
+            <p class="cargo">Distribuidora Ferretera PZ · Marketing Digital Ecommerce</p>
+            <ul>
+              <li>Estrategia de precios y gestión del sistema Xubio para aumentar la rentabilidad.</li>
+              <li>Flyers y comunicación visual coherente que elevaron la conversión de las campañas promocionales.</li>
+              <li>Coordinación de envíos nacionales con Correo Argentino y Andreani.</li>
+            </ul>
+          </article>
+
+          <article class="hito-r">
+            <span class="anio">2012</span>
+            <span class="fecha">2012 – Actualidad</span>
+            <h3>Maruka Digital</h3>
+            <p class="cargo">Consultora freelance en Comunicación y Marketing Digital, en paralelo a roles de dependencia</p>
+            <ul>
+              <li>Sitios web a medida para más de 20 clientes (Climateck, Vultur Ecoturismo, Estudio García Porta, entre otros).</li>
+              <li>Planes estratégicos de comunicación y marketing para PyMEs y organizaciones sociales, con mejora del engagement digital.</li>
+              <li>CRM y bases de datos en Access para Industrias Sur; manuales de roles, funciones y procedimientos.</li>
+            </ul>
+          </article>
+
+          <article class="hito-r">
+            <span class="anio">1996</span>
+            <span class="fecha">1996 – 2011</span>
+            <h3>Telecom SA</h3>
+            <p class="cargo">Sector Administrativo / Atención al Cliente</p>
+            <ul>
+              <li>Auditoría y distribución logística nacional, con análisis estadístico y reportes que redujeron errores.</li>
+              <li>Proyectos de mejora continua: Voz del Cliente, Equipo de Calidad y Focus Comunicacional.</li>
+              <li>Sistemas en Access para automatizar reportes y reducir el tiempo de procesamiento.</li>
+            </ul>
+          </article>
+      </div>
+
+      <div class="contenedor">
+        <div class="riel-controles">
+          <button type="button" id="riel-ant" aria-label="Anterior">‹</button>
+          <div class="riel-barra" aria-hidden="true"><i id="riel-prog"></i></div>
+          <button type="button" id="riel-sig" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRABAJOS ===================== -->
+    <section class="seccion" id="trabajos">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <span class="etiqueta num"><b>03</b> Trabajos</span>
+          <h2>Piezas que <span class="resalte-n">comunican</span> y venden</h2>
+          <p>Flyers, publicaciones para redes, comunicación institucional y cobertura de eventos realizados para las empresas en las que trabajé. Tocá una pieza para verla en grande.</p>
+        </div>
+
+        <div class="filtros" role="group" aria-label="Filtrar trabajos por empresa">
+          <button type="button" class="filtro" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filtro" data-filtro="ingemar" aria-pressed="false">Ingemar</button>
+          <button type="button" class="filtro" data-filtro="innotec" aria-pressed="false">Sirolo · Innotec · Hydrom</button>
+          <button type="button" class="filtro" data-filtro="avtor" aria-pressed="false">Avtor</button>
+          <button type="button" class="filtro" data-filtro="gb" aria-pressed="false">Ferretería General Bustos</button>
+        </div>
+
+        <div class="galeria" id="galeria">
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Alumbrado solar LED">
+            <img src="images/portfolio/ingemar-solar-led.jpg" width="559" height="559" loading="lazy" alt="Flyer de Ingemar con luminaria solar LED y sus características técnicas">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Alumbrado solar LED</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="innotec" data-titulo="Sirolo · Filtradora de aceite">
+            <img src="images/portfolio/sirolo-filtradora-aceite.jpg" width="1080" height="1080" loading="lazy" alt="Flyer de Sirolo con filtradora de aceite S2 y sus especificaciones">
+            <span class="pie-pieza"><b class="chip-emp">Sirolo</b><span>Filtradora de aceite</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Materiales para redes de incendio">
+            <img src="images/portfolio/ingemar-redes-incendio.jpg" width="560" height="563" loading="lazy" alt="Flyer de Ingemar con materiales e insumos para redes de incendio">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Materiales para redes de incendio</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="avtor" data-titulo="Avtor · Encuestas de satisfacción del cliente">
+            <img src="images/portfolio/avtor-encuestas-satisfaccion.jpg" width="456" height="455" loading="lazy" alt="Pieza de Avtor sobre encuestas de satisfacción del cliente y resultados exitosos">
+            <span class="pie-pieza"><b class="chip-emp">Avtor</b><span>Encuestas de satisfacción del cliente</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="innotec" data-titulo="Innotec · Reductores de velocidad">
+            <img src="images/portfolio/innotec-reductores-velocidad.jpg" width="1080" height="1080" loading="lazy" alt="Flyer de Innotec S.A. con reductores de velocidad">
+            <span class="pie-pieza"><b class="chip-emp">Innotec</b><span>Reductores de velocidad</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Mallas de advertencia para redes de agua">
+            <img src="images/portfolio/ingemar-mallas-advertencia.jpg" width="559" height="558" loading="lazy" alt="Flyer de Ingemar con mallas de advertencia para redes de agua">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Mallas de advertencia para redes de agua</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Proyectar Córdoba, Foro de Desarrollismo y Construcción">
+            <img src="images/portfolio/ingemar-proyectar-cordoba.jpg" width="1080" height="1080" loading="lazy" alt="Collage de fotos del equipo de Ingemar en Proyectar Córdoba, II Foro de Desarrollismo y Construcción">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Proyectar Córdoba (feria)</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="avtor" data-titulo="Avtor · Oferta de discos de corte">
+            <img src="images/portfolio/avtor-discos-oferta.jpg" width="611" height="615" loading="lazy" alt="Flyer de Avtor con oferta de caja cerrada por 25 discos de corte">
+            <span class="pie-pieza"><b class="chip-emp">Avtor</b><span>Oferta de discos de corte</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="innotec" data-titulo="Hydrom · Filtros de retorno spin on">
+            <img src="images/portfolio/hydrom-filtros-retorno.jpg" width="1080" height="1080" loading="lazy" alt="Flyer de Hydrom Oleodinámica con filtros de retorno spin on">
+            <span class="pie-pieza"><b class="chip-emp">Hydrom</b><span>Filtros de retorno spin on</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Redes de telefonía, gas, agua, cloacas y alumbrado público">
+            <img src="images/portfolio/ingemar-redes-servicios.jpg" width="562" height="561" loading="lazy" alt="Pieza institucional de Ingemar con su edificio y las líneas de redes de telefonía, gas, agua, cloacales y alumbrado público">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Redes de telefonía, gas, agua, cloacas y alumbrado</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Curso de electrofusión">
+            <img src="images/portfolio/ingemar-curso-electrofusion.jpg" width="555" height="563" loading="lazy" alt="Publicación de Ingemar felicitando a los participantes del curso de electrofusión">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Curso de electrofusión</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="innotec" data-titulo="Innotec · Variadores de frecuencia">
+            <img src="images/portfolio/innotec-variadores-frecuencia.jpg" width="1080" height="1080" loading="lazy" alt="Flyer de Innotec S.A. con variadores de frecuencia">
+            <span class="pie-pieza"><b class="chip-emp">Innotec</b><span>Variadores de frecuencia</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="avtor" data-titulo="Avtor · Armá tu bulonera y te asesoramos">
+            <img src="images/portfolio/avtor-bulonera.jpg" width="447" height="395" loading="lazy" alt="Pieza de Avtor: armamos tu bulonera y te asesoramos">
+            <span class="pie-pieza"><b class="chip-emp">Avtor</b><span>Armá tu bulonera</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Caños para cloacas y obras pluviales">
+            <img src="images/portfolio/ingemar-canos-despacho.jpg" width="553" height="553" loading="lazy" alt="Flyer de Ingemar con caños para cloacas y obras pluviales: estamos despachando pedidos">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Caños para cloacas y obras pluviales</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="gb" data-titulo="Ferretería General Bustos · Lámparas LED">
+            <img src="images/portfolio/ferreteria-gb-lamparas-led.jpg" width="558" height="547" loading="lazy" alt="Flyer de Ferretería GB con lámparas LED de 9 W luz fría Etheos">
+            <span class="pie-pieza"><b class="chip-emp">Ferretería GB</b><span>Lámparas LED</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Máquinas de electrofusión">
+            <img src="images/portfolio/ingemar-maquinas-electrofusion.jpg" width="560" height="557" loading="lazy" alt="Flyer de Ingemar con máquinas de electrofusión con conexión Bluetooth">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Máquinas de electrofusión</span></span>
+          </button>
+          <button type="button" class="pieza" data-cat="ingemar" data-titulo="Ingemar · Valores institucionales">
+            <img src="images/portfolio/ingemar-valores.jpg" width="561" height="560" loading="lazy" alt="Pieza institucional de Ingemar con sus valores: servicio y orientación a los resultados">
+            <span class="pie-pieza"><b class="chip-emp">Ingemar</b><span>Valores institucionales</span></span>
+          </button>
+        </div>
+        <p class="nota-galeria">Piezas realizadas para Ingemar, Sirolo, Innotec, Hydrom, Avtor y Ferretería General Bustos. Las marcas pertenecen a sus respectivas empresas.</p>
+      </div>
+    </section>
+
+    <!-- ===================== VIDEOS ===================== -->
+    <section class="seccion cine" id="videos">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <span class="etiqueta num"><b>04</b> Videos</span>
+          <h2>Producción audiovisual, <span class="resalte-n">en movimiento</span></h2>
+          <p>Videos comerciales e institucionales realizados como parte de mi trabajo en comunicación y marketing. Elegí uno de la lista para reproducirlo.</p>
+        </div>
+
+        <div class="cine-grid">
+          <div>
+            <div class="escenario" id="escenario"></div>
+            <div class="escenario-pie">
+              <h3 id="esc-titulo">Video 1</h3>
+              <a id="esc-link" href="https://www.youtube.com/watch?v=fNyZ8iuiRUo" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+            </div>
+          </div>
+          <div class="lista-videos" id="lista-videos"></div>
+        </div>
+
+        <noscript>
+          <p>
+            <a href="https://www.youtube.com/watch?v=fNyZ8iuiRUo">Video 1</a> ·
+            <a href="https://www.youtube.com/watch?v=bjr2ndTxc5Y">Video 2</a> ·
+            <a href="https://www.youtube.com/watch?v=1-YiWWEpB54&amp;list=PLLiIIien32a4uFKto8Ex1r9Xo9L8sq63g">Video 3</a> ·
+            <a href="https://www.youtube.com/watch?v=DpRk0O8Tik8&amp;list=PLLiIIien32a5lxJmV0-Bqfl-3iA4ZlEX7">Video 4</a>
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===================== FORMACIÓN ===================== -->
+    <section class="seccion" id="formacion">
+      <div class="contenedor">
+        <div class="titulo-seccion aparecer">
+          <span class="etiqueta num"><b>05</b> Formación</span>
+          <h2>Siempre <span class="resalte-a">aprendiendo</span></h2>
+        </div>
+
+        <div class="formacion">
+          <div class="bloque aparecer">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-grad"/></svg> Educación</h3>
+            <p><strong>Lic. en Ciencias de la Comunicación</strong><br>Colegio Universitario de Periodismo Obispo Trejo y Sanabria. Periodista Profesional, Locución.</p>
+            <h4>Formación complementaria</h4>
+            <ul>
+              <li>Marketing Digital y Acciones de Preventa/Posventa (Universidad Siglo XXI)</li>
+              <li>Plan de Negocios (UCC – Fundación Impulsar)</li>
+              <li>Estadística y Análisis Impositivo</li>
+              <li>Comunicación 3.0 y Ecommerce</li>
+              <li>Diseño Gráfico (CorelDRAW, Adobe Creative)</li>
+              <li>Producción Audiovisual (Canal 7 Bs. As.)</li>
+              <li>RSE – Agenda 2030 ODS (Universidad Blas Pascal)</li>
+              <li>Liderazgo en Economía Verde (Fundación Advanced Leadership)</li>
+            </ul>
+          </div>
+
+          <div class="bloque aparecer">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg> Reconocimientos</h3>
+            <ul>
+              <li>Excelencia en Gestión: resolución de conflictos y actitud proactiva (Telecom SA)</li>
+              <li>Mentora, Fundación Voces Vitales</li>
+              <li>Líder en Economía Verde, Fundación Advanced Leadership</li>
+            </ul>
+            <p style="margin-top:1.4rem;">Referencias laborales disponibles a pedido.</p>
+          </div>
+
+          <div class="bloque ancho aparecer">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-tools"/></svg> Habilidades y herramientas</h3>
+            <div class="grupo-habilidades">
+              <div>
+                <h4>Publicidad y analítica</h4>
+                <ul class="chips">
+                  <li>Google Ads</li>
+                  <li>Meta Ads</li>
+                  <li>Google Analytics</li>
+                  <li>Power BI</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Ventas y ecommerce</h4>
+                <ul class="chips">
+                  <li>Gestión de Ecommerce</li>
+                  <li>Mercado Libre</li>
+                  <li>WhatsApp Business</li>
+                  <li>Email Marketing</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Datos y gestión</h4>
+                <ul class="chips">
+                  <li>CRM</li>
+                  <li>Segmentación de bases de datos</li>
+                  <li>Sistemas de gestión comercial</li>
+                  <li>IA aplicada a RR. HH.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Diseño y audiovisual</h4>
+                <ul class="chips">
+                  <li>CorelDRAW</li>
+                  <li>Adobe Creative Suite</li>
+                  <li>Diseño gráfico</li>
+                  <li>Producción audiovisual</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="seccion contacto" id="contacto">
+      <div class="contenedor contacto-centro aparecer">
+        <span class="etiqueta">Contacto</span>
+        <h2>Contanos tu necesidad, tenemos la solución</h2>
+        <p>Escribime por WhatsApp y te respondo con una propuesta pensada para tu negocio.</p>
+
+        <a class="btn-whatsapp" href="https://wa.me/5493517370345?text=Hola%20Mariana%2C%20vi%20tu%20portfolio%20y%20quiero%20contarte%20mi%20necesidad" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" fill="currentColor">
+            <path d="M16.003 3C8.83 3 3 8.83 3 16c0 2.29.6 4.52 1.74 6.49L3 29l6.7-1.72A12.94 12.94 0 0 0 16.003 29C23.17 29 29 23.17 29 16S23.17 3 16.003 3Zm0 23.6c-2.03 0-4.01-.55-5.74-1.58l-.41-.25-3.98 1.02 1.06-3.88-.27-.43A10.57 10.57 0 0 1 5.4 16c0-5.9 4.8-10.6 10.6-10.6S26.6 10.1 26.6 16s-4.7 10.6-10.6 10.6Zm5.82-7.94c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.35-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64s1.14 3.06 1.3 3.27c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.37.19-1.51-.08-.13-.29-.21-.61-.37Z"/>
+          </svg>
+          Escribime por WhatsApp
+        </a>
+
+        <ul class="datos-contacto">
+          <li>✉️ <a href="mailto:marukadigital@gmail.com">marukadigital@gmail.com</a></li>
+          <li>💬 <a href="https://wa.me/5493517370345" target="_blank" rel="noopener">+54 9 351 737-0345</a></li>
+          <li>💼 <a href="https://www.linkedin.com/in/marianateresitaferreyra" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>📍 Córdoba, Argentina</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="contenedor footer-inner">
+      <a href="index.html" class="logo-texto" aria-label="MaruKa Digital - Volver al sitio">
+        <span class="m">MARU</span><span class="k">KA</span>
+        <small>DIGITAL</small>
+      </a>
+      <span>© <span id="anio"></span> MaruKa Digital · Mariana Ferreyra · <a href="index.html">Volver al sitio</a></span>
+    </div>
+  </footer>
+
+  <!-- Visor de imágenes -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" hidden>
+    <button type="button" class="cerrar" id="lb-cerrar" aria-label="Cerrar">×</button>
+    <button type="button" class="anterior" id="lb-ant" aria-label="Imagen anterior">‹</button>
+    <img id="lb-img" alt="">
+    <button type="button" class="siguiente" id="lb-sig" aria-label="Imagen siguiente">›</button>
+    <div class="pie" id="lb-pie"></div>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="whatsapp" href="https://wa.me/5493517370345" target="_blank" rel="noopener" aria-label="Escribime por WhatsApp"><svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" fill="#fff"><path d="M16.003 3C8.83 3 3 8.83 3 16c0 2.29.6 4.52 1.74 6.49L3 29l6.7-1.72A12.94 12.94 0 0 0 16.003 29C23.17 29 29 23.17 29 16S23.17 3 16.003 3Zm0 23.6c-2.03 0-4.01-.55-5.74-1.58l-.41-.25-3.98 1.02 1.06-3.88-.27-.43A10.57 10.57 0 0 1 5.4 16c0-5.9 4.8-10.6 10.6-10.6S26.6 10.1 26.6 16s-4.7 10.6-10.6 10.6Zm5.82-7.94c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.35-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64s1.14 3.06 1.3 3.27c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.37.19-1.51-.08-.13-.29-.21-.61-.37Z"/></svg></a>
+
+  <script>
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ---------- Menú móvil ----------
+    const btn = document.getElementById('btn-menu');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      const abierto = menu.classList.toggle('abierto');
+      btn.setAttribute('aria-expanded', abierto);
+    });
+    menu.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => {
+        menu.classList.remove('abierto');
+        btn.setAttribute('aria-expanded', 'false');
+      })
+    );
+
+    // ---------- Año del footer ----------
+    document.getElementById('anio').textContent = new Date().getFullYear();
+
+    // ---------- Barra de progreso de lectura ----------
+    const progreso = document.getElementById('progreso');
+    function actualizarProgreso() {
+      const h = document.documentElement;
+      const total = h.scrollHeight - h.clientHeight;
+      progreso.style.width = (total > 0 ? (h.scrollTop / total) * 100 : 0) + '%';
+    }
+    window.addEventListener('scroll', actualizarProgreso, { passive: true });
+    actualizarProgreso();
+
+    // ---------- Aparición al hacer scroll ----------
+    const items = document.querySelectorAll('.aparecer');
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entradas) => {
+        entradas.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      items.forEach(el => obs.observe(el));
+    } else {
+      items.forEach(el => el.classList.add('visible'));
+    }
+
+    // ---------- Números que cuentan ----------
+    function contar(el) {
+      const fin = Number(el.dataset.cuenta);
+      let t0 = null;
+      el.textContent = '0';
+      function paso(t) {
+        if (!t0) t0 = t;
+        const p = Math.min((t - t0) / 1400, 1);
+        el.textContent = Math.round(fin * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(paso);
+      }
+      requestAnimationFrame(paso);
+    }
+    if (!reduce && 'IntersectionObserver' in window) {
+      const obsN = new IntersectionObserver((entradas) => {
+        entradas.forEach(e => {
+          if (e.isIntersecting) { contar(e.target); obsN.unobserve(e.target); }
+        });
+      }, { threshold: 0.6 });
+      document.querySelectorAll('[data-cuenta]').forEach(el => obsN.observe(el));
+    }
+
+    // ---------- Palabra que rota en el hero ----------
+    const palabra = document.getElementById('palabra');
+    const palabras = [
+      ['ecommerce', 'c-n'], ['inteligencia artificial', 'c-v'], ['marca y comunicación', 'c-a'],
+      ['datos y CRM', 'c-n'], ['WhatsApp', 'c-v'], ['sitios web a medida', 'c-a']
+    ];
+    let k = 0;
+    if (!reduce) {
+      setInterval(() => {
+        palabra.classList.add('sale');
+        setTimeout(() => {
+          k = (k + 1) % palabras.length;
+          palabra.textContent = palabras[k][0];
+          palabra.className = 'palabra ' + palabras[k][1];
+        }, 260);
+      }, 2400);
+    }
+
+    // ---------- Cinta de empresas (se duplica para el bucle) ----------
+    const pista = document.getElementById('cinta-pista');
+    if (!reduce) {
+      Array.from(pista.children).forEach(s => {
+        const c = s.cloneNode(true);
+        c.setAttribute('aria-hidden', 'true');
+        pista.appendChild(c);
+      });
+    }
+
+    // ---------- Recorrido: carrusel ----------
+    const riel = document.getElementById('riel');
+    const prog = document.getElementById('riel-prog');
+    function pasoRiel() {
+      const h = riel.querySelector('.hito-r');
+      return h.getBoundingClientRect().width + 22;
+    }
+    function actualizarRiel() {
+      const max = riel.scrollWidth - riel.clientWidth;
+      const visible = riel.clientWidth / riel.scrollWidth;
+      prog.style.width = Math.max(visible * 100, 10) + '%';
+      prog.style.marginLeft = (max > 0 ? (riel.scrollLeft / max) * (100 - Math.max(visible * 100, 10)) : 0) + '%';
+    }
+    document.getElementById('riel-ant').addEventListener('click', () => riel.scrollBy({ left: -pasoRiel(), behavior: 'smooth' }));
+    document.getElementById('riel-sig').addEventListener('click', () => riel.scrollBy({ left: pasoRiel(), behavior: 'smooth' }));
+    riel.addEventListener('scroll', actualizarRiel, { passive: true });
+    window.addEventListener('resize', actualizarRiel);
+    actualizarRiel();
+
+    // arrastrar con el mouse
+    let arrastra = false, x0 = 0, s0 = 0;
+    riel.addEventListener('pointerdown', e => {
+      if (e.pointerType !== 'mouse') return;
+      arrastra = true; x0 = e.clientX; s0 = riel.scrollLeft;
+      riel.classList.add('arrastrando');
+    });
+    window.addEventListener('pointermove', e => {
+      if (!arrastra) return;
+      riel.scrollLeft = s0 - (e.clientX - x0);
+    });
+    window.addEventListener('pointerup', () => {
+      arrastra = false;
+      riel.classList.remove('arrastrando');
+    });
+
+    // ---------- Filtros de la galería (con contador) ----------
+    const piezas = Array.from(document.querySelectorAll('.pieza'));
+    const filtros = document.querySelectorAll('.filtro');
+    filtros.forEach(f => {
+      const cat = f.dataset.filtro;
+      const n = cat === 'todos' ? piezas.length : piezas.filter(p => p.dataset.cat === cat).length;
+      const s = document.createElement('span');
+      s.className = 'n';
+      s.textContent = n;
+      f.appendChild(s);
+      f.addEventListener('click', () => {
+        filtros.forEach(x => x.setAttribute('aria-pressed', x === f ? 'true' : 'false'));
+        piezas.forEach(p => { p.hidden = !(cat === 'todos' || p.dataset.cat === cat); });
+      });
+    });
+
+    // ---------- Visor de imágenes ----------
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbPie = document.getElementById('lb-pie');
+    let visibles = [], indice = 0, disparador = null;
+
+    function mostrar(i) {
+      indice = (i + visibles.length) % visibles.length;
+      const p = visibles[indice];
+      const img = p.querySelector('img');
+      lbImg.src = img.currentSrc || img.src;
+      lbImg.alt = img.alt;
+      lbPie.textContent = p.dataset.titulo + '  ·  ' + (indice + 1) + ' / ' + visibles.length;
+    }
+    function abrir(p) {
+      visibles = piezas.filter(x => !x.hidden);
+      disparador = p;
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+      mostrar(visibles.indexOf(p));
+      document.getElementById('lb-cerrar').focus();
+    }
+    function cerrar() {
+      lb.hidden = true;
+      document.body.style.overflow = '';
+      if (disparador) disparador.focus();
+    }
+    piezas.forEach(p => p.addEventListener('click', () => abrir(p)));
+    document.getElementById('lb-cerrar').addEventListener('click', cerrar);
+    document.getElementById('lb-ant').addEventListener('click', () => mostrar(indice - 1));
+    document.getElementById('lb-sig').addEventListener('click', () => mostrar(indice + 1));
+    lb.addEventListener('click', e => { if (e.target === lb) cerrar(); });
+    document.addEventListener('keydown', e => {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') cerrar();
+      if (e.key === 'ArrowLeft') mostrar(indice - 1);
+      if (e.key === 'ArrowRight') mostrar(indice + 1);
+    });
+
+    // ---------- Sala de videos ----------
+    // ✏️ Para ponerle nombre a cada video, editá el campo "titulo".
+    const VIDEOS = [
+      { id: 'fNyZ8iuiRUo', titulo: 'Video 1', url: 'https://www.youtube.com/watch?v=fNyZ8iuiRUo' },
+      { id: 'bjr2ndTxc5Y', titulo: 'Video 2', url: 'https://www.youtube.com/watch?v=bjr2ndTxc5Y' },
+      { id: '1-YiWWEpB54', titulo: 'Video 3', url: 'https://www.youtube.com/watch?v=1-YiWWEpB54&list=PLLiIIien32a4uFKto8Ex1r9Xo9L8sq63g' },
+      { id: 'DpRk0O8Tik8', titulo: 'Video 4', url: 'https://www.youtube.com/watch?v=DpRk0O8Tik8&list=PLLiIIien32a5lxJmV0-Bqfl-3iA4ZlEX7' }
+    ];
+    const PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+    const escenario = document.getElementById('escenario');
+    const lista = document.getElementById('lista-videos');
+    const escTitulo = document.getElementById('esc-titulo');
+    const escLink = document.getElementById('esc-link');
+    const botones = [];
+
+    function miniatura(id) {
+      const img = document.createElement('img');
+      img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
+      img.alt = '';
+      img.loading = 'lazy';
+      img.addEventListener('error', () => img.remove());
+      return img;
+    }
+
+    function cargar(i, reproducir) {
+      const v = VIDEOS[i];
+      escenario.textContent = '';
+      if (reproducir) {
+        const f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&rel=0';
+        f.title = v.titulo;
+        f.allow = 'autoplay; encrypted-media; picture-in-picture; web-share';
+        f.allowFullscreen = true;
+        f.referrerPolicy = 'strict-origin-when-cross-origin';
+        escenario.appendChild(f);
+      } else {
+        escenario.appendChild(miniatura(v.id));
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'btn-play';
+        b.setAttribute('aria-label', 'Reproducir ' + v.titulo);
+        b.innerHTML = '<span>' + PLAY + '</span>';
+        b.addEventListener('click', () => cargar(i, true));
+        escenario.appendChild(b);
+      }
+      escTitulo.textContent = v.titulo;
+      escLink.href = v.url;
+      botones.forEach((bt, j) => bt.setAttribute('aria-current', j === i ? 'true' : 'false'));
+    }
+
+    VIDEOS.forEach((v, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'item-video';
+      const mini = document.createElement('span');
+      mini.className = 'mini';
+      mini.appendChild(miniatura(v.id));
+      mini.insertAdjacentHTML('beforeend', PLAY);
+      const txt = document.createElement('span');
+      txt.innerHTML = '<b></b><small>Tocá para reproducir</small>';
+      txt.querySelector('b').textContent = v.titulo;
+      b.append(mini, txt);
+      b.addEventListener('click', () => cargar(i, true));
+      lista.appendChild(b);
+      botones.push(b);
+    });
+    cargar(0, false);
+  </script>
+</body>
+</html>
